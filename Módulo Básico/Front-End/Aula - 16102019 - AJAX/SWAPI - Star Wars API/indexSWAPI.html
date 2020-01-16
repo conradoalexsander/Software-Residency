@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   
+</head>
+<body>
+    <label for="personagem" >Informe o cep desejado</label>
+    <input type="number" id="personagem" onchage="loadData()">
+    <button onclick="loadData()">Ajax request</button>
+
+    <div id="demo">
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="indexSWAPI.js"></script>
+</body>
+</html>

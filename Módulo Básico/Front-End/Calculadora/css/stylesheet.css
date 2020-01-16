@@ -1,0 +1,186 @@
+body {
+    /*background: white;*/
+    background: url("https://www.thisiscolossal.com/wp-content/uploads/2019/04/Owunna_InfiniteEssence03-768x512@2x.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 1000px;
+    height: 600px;
+    color: white;
+    font-family: Helvetica;
+}
+
+.header {
+    align-items: center;
+    align-self: center;
+    border: 2px white hidden;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+}
+
+#INPUTS {
+    width: 100%;
+    height: 8%;
+    left: 50%;
+    top: 50%;
+}
+
+#n1 {
+    border: 2px hidden black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#n2 {
+    border: 2px hidden black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#RESULTADO {
+    color: rgb(4, 3, 88);
+    vertical-align: middle;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
+#RESULTADO {
+    background: white;
+    height: 10%;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 200%;
+    border: 2px hidden black;
+    border-radius: 20px;
+    content: "";
+}
+
+#OPERADORES {
+    width: 100%;
+    height: 10%;
+    left: 50%;
+    top: 50%;
+}
+
+#numDec {
+    width: 8%;
+    height: 20px;
+    border: 2px hidden black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.button {
+    border-top: 1px solid #ecf797;
+    background: #b4ac0c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dce6ed), to(#b4ac0c));
+    background: -webkit-linear-gradient(top, #dce6ed, #b4ac0c);
+    background: -moz-linear-gradient(top, #dce6ed, #b4ac0c);
+    background: -ms-linear-gradient(top, #dce6ed, #b4ac0c);
+    background: -o-linear-gradient(top, #dce6ed, #b4ac0c);
+    padding: 8px 16px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: #000000;
+    font-size: 20px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: bolder;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.button:hover {
+    border-top-color: #000000;
+    background: #000000;
+    color: #fff7ff;
+}
+
+.button:active {
+    border-top-color: #475259;
+    background: #475259;
+}
+
+.button2 {
+    border-top: 1px solid #fafafa;
+    background: #6e0867;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dce6ed), to(#6e0867));
+    background: -webkit-linear-gradient(top, #dce6ed, #6e0867);
+    background: -moz-linear-gradient(top, #dce6ed, #6e0867);
+    background: -ms-linear-gradient(top, #dce6ed, #6e0867);
+    background: -o-linear-gradient(top, #dce6ed, #6e0867);
+    padding: 8px 16px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: #000000;
+    font-size: 16px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: bolder;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.button2:hover {
+    border-top-color: #000000;
+    background: #000000;
+    color: #fff7ff;
+}
+
+.button2:active {
+    border-top-color: #475259;
+    background: #475259;
+}
+
+.button3 {
+    border-top: 1px solid #fafafa;
+    background: #6e0867;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dce6ed), to(#dd4d4d));
+    background: -webkit-linear-gradient(top, #dce6ed, #dd4d4d);
+    background: -moz-linear-gradient(top, #dce6ed, #dd4d4d);
+    background: -ms-linear-gradient(top, #dce6ed, #dd4d4d);
+    background: -o-linear-gradient(top, #dce6ed, #dd4d4d);
+    padding: 8px 16px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: #000000;
+    font-size: 16px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: bolder;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.button3:hover {
+    border-top-color: #000000;
+    background: #000000;
+    color: #fff7ff;
+}
+
+.button3:active {
+    border-top-color: #475259;
+    background: #475259;
+}
+h1 {
+    font-family: Harrington, Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}

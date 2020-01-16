@@ -1,0 +1,110 @@
+#YelpCamp 
+
+1 - Inital routes
+
+*add landing Page
+*add Campgrounds Page that lists all campgrounds
+
+#Each campground has:
+*Name
+*Image
+
+[
+	{name: "Salmon Creek", image: "http://image.com"},
+	{name:"Quitandinha", image: "http://petropolis.com}
+]
+
+2 - layout
+
+* Create our header and footer partials
+* Add in Bootstrap
+
+3 - Creating new Campgrounds
+* Setup new campground POST route
+* Add in body-parser
+* Setup route to show form
+* Add basic unstyled form
+
+4 - Style the campgrounds page
+* Add better header/title
+* Make campgrounds display in grid
+
+5 - Style the Navbar and form
+* Add a navbar to all templates
+* Style the new campground form
+
+6 - Add mongoose
+* Install and configure mongoose
+* Setup campground model
+* Use campground model inside of our routes!
+
+7 - Show Page
+* Review RESTful routes we've seen so far
+* Add description to our campground model
+* Show db.collection.drop()
+* Add a show route/template
+
+RESTFUL ROUTES
+
+name	    url		verb	       Description	
+=================================================================
+INDEX      /dogs        GET            Display a list of all dog
+NEW	   /dogs/new	GET	       Display form to make a new dog
+CREATE	   /dogs	POST	       Add new dog to DB
+SHOW	   /dogs/:id	GET 	       Shows info about one dog
+
+8 - Refactor mongoose page
+* Create models directory
+* Use module.exports
+* Require everything correctly!
+
+9 - Add Seeds File
+* Add a seeds.js file
+* Run the seeds file every time the server starts
+
+10 - Add Comments File
+* Make our errors go away!
+* Display comments on campground show page
+
+11 - Comment NewCreate
+
+
+name	         url		verb	       Description	
+=================================================================
+INDEX      /campground        GET          Display a list of all dog
+NEW	       /campground/new	  GET	       Display form to make a new dog
+CREATE	   /campground	      POST	       Add new dog to DB
+SHOW	   /campground/:id	  GET 	       Shows info about one dog	
+
+12 - Auth Pt. 1 - Add user Model
+* Install all packages needed for auth
+* Define User model
+
+13 - Auth P.t 2 - Register
+* Configure Passport
+* Add register routes
+* Add register template
+
+14 - Auth Pt. 3 - Login
+* Add login routes
+* Add login template
+
+14 - Auth Pt. 4 - Login
+* Add logout route
+* Prevent user from adding a comment if not signed in
+* Add links to navbar
+
+
+15 - Auth Pt. 5 - Show/Hide Links
+* Show/hide auth links Correctly
+
+16 - Refactor the Routes
+* Use express router to reorganize all routes
+
+17 - User + Comments
+* Associate users and comments
+* Save author's name to a comment automatically
+
+17 - User + Campgrounds
+* Prevent an unaunthenticated user from creating a campground
+* Save username+id to newly created campground

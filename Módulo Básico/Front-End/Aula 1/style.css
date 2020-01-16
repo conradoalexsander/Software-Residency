@@ -1,0 +1,37 @@
+.cor {
+    background-color: blueviolet; 
+}
+.height {
+    height: 200px;
+}
+.width {
+    width: 200px;
+}
+.row {
+    display: flex;
+    display: inline-flex;
+    justify-content: center;
+}
+.container-mae {
+    justify-content: center;
+    width: 600px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+}
+.width3 {
+    width: 300px;
+}
+.width1 {
+    width: 100px;
+}
+.width4{
+    width: 400px;
+}
+.cor2 {
+    background-color: aqua 
+}
+body {
+    background-color: bisque
+}

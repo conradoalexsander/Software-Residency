@@ -1,0 +1,65 @@
+<%include ../partials/header%>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">Forrozeiro!</p>
+
+
+            <div class="list-group">
+                <li class="list-group-item">Info 1</li>
+                <li class="list-group-item">Info 2</li>
+                <li class="list-group-item">Info 3</li>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-9">
+            <div class="thumbnail">
+                <img class="img-responsive" src="<%=evento.image%>">
+                <div class="caption-full">
+                    <h4 class="fa-pull-right">R$30,00</h4>
+                    <h4><a>
+                            <h1><%=evento.name%></h1>
+                        </a></h4>
+                    <p><%=evento.description%></p>
+                    <p>
+                        <em>Enviado por: <%=evento.author.username%></em>
+                    </p>
+                    <a class="btn btn-warning" href="/eventos/<%=evento._id%>/edit">Editar</a>
+
+                    <form id="deleteForm" action="/eventos/<%=evento._id%>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger">Deletar</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="well">
+                <div class="text-right">
+                    <p>
+                        <a class="btn btn-success" href="/eventos/<%=evento._id%>/comments/new">Add a new
+                            Comment</a>
+                    </p>
+                </div>
+
+                <% evento.comments.forEach(function(comment){ %>
+                <div class="row">
+                    <div class="col-md-12">
+                        <strong><%= comment.author.username %></strong>
+                        <span class="pull-right"></span>
+                        <p>
+                            <%=comment.text %>
+                        </p>
+                    </div>
+
+                </div>
+
+                <% }); %>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%include ../partials/footer%>

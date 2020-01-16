@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div>
+            <h1 id="nome" onmouseover="teste()"></h1>
+        </div>
+
+        <div>
+                <h1 id="nomeCompleto"></h1>
+        </div>
+
+        <div>
+            <p id="idade"></p>
+        </div>
+
+        <div>
+                <p id="resp"></p>
+            </div>
+
+       <script>
+           function teste(){
+               alert("Funfou");
+           }
+
+           function mudaImagem(){
+            document.getElementById("submit-btn").addEventListener("click", function(event){
+                adiciona(event);
+            });   
+           }
+           window.onload = function(){
+            var aluno = {
+               nome: "Fulano",
+               sobrenome: "da Silva",
+               idade: 22,
+               matricula: "22222",
+               //criando atributos para o objeto aluno concatenando outros atributos
+               nomeCompleto: function(){
+                   return aluno.nome+ " " + aluno.sobrenome;
+                },
+                isResponsavel: function(){
+                    if(this.idade<18)
+                        return "Depende de um responsavel";
+                    
+                    else
+                        return "Pode Prender!!!";
+                }
+           };
+           
+           
+           console.log(aluno);
+           nome.innerHTML = "Nome: " + aluno.nome;
+           idade.innerHTML = "<strong> Idade: </strong>" + aluno.idade;
+           nomeCompleto.innerHTML = "<strong> Nome Completo: </strong>" + aluno.nomeCompleto();
+           resp.innerHTML = "<strong> Responsável? </strong>" + aluno.isResponsavel();
+
+        
+        }
+
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

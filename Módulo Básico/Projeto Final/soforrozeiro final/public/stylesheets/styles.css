@@ -1,0 +1,40 @@
+#deleteForm {
+    display: inline;
+}
+
+#cabeçalho {
+    background: transparent linear-gradient(270deg, #D20C0CDE 0%, #FF0101B0 42%, #F67D7DAB 73%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#loginCabeçalho {
+    color: white;
+}
+
+#cadastroCabeçalho {
+    color: white;
+}
+
+#logoutCabeçalho {
+    color:white;
+}
+
+#logadoCabeçalho {
+    color:white;
+}
+
+#marca {
+    color: rgb(71, 70, 70);
+}
+
+#containerIndex{
+    background-image: url('../img/logo-nucleo.jpg');
+}
+
+.zoom {
+     transition: transform 1s;
+}
+
+.zoom:hover { 
+    transform: scale(1.1); 
+}

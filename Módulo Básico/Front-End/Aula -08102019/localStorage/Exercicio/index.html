@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 1 - Aula 08/10/2019</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+
+        <div>
+                <label for="nomeItem">Descrição do item</label>
+                <input type="text" id="nomeItem"></input>
+        </div>
+
+        <div>
+                <label for="valorItem">Valor do item</label>
+                <input type="text" id="valorItem"></input>
+
+        </div>
+
+        <div>
+                <button  onclick="salvar()" class="btn btn-primary">Salvar</button>
+                <button onclick="listarTodos()" class="btn btn-primary">Listar</button>
+                <button onclick="limparTodos()" class="btn btn-danger">Limpar</button>
+        </div>
+
+
+<div id="listaItens"> 
+
+<table id="lista">
+
+
+</table>
+
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

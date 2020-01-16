@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+        <h1 id="texto">Primeiro js</h1> 
+        <input type="number" id="v1" placeholder="Insira o primeiro valor: ">
+        <input type="number" id="v2" placeholder="Insira o segundo valor: ">
+        <button onclick="atualiza()">atualiza</button>
+        <button onclick="trocaCor()">troca cor</button>
+        <button onclick="soma()">soma</button>
+        <button onclick="somaReescreveDocumento()">soma e reescreve o documento</button>
+        <button onclick="somaConsole()">Soma no console</button>
+
+</body>
+
+<script>
+       
+        //O javascript não é uma linguagem tipada (aceita declaração sem declarar o valor)-
+        var valor1 = "2 ", valor2 =2.5; 
+        var original = "Primeiro JS";
+
+        function soma(){
+            //função que realiza a soma de dois valores a partir de input do usuário
+            var v1=Number(document.getElementById('v1').value);
+            var v2=Number(document.getElementById('v2').value);
+            document.getElementById('texto').innerHTML = "soma = " +(v1+v2);
+        }
+
+        function somaConsole(){
+            //função que realiza a soma de dois valores a partir de input do usuário
+            var v1=Number(document.getElementById('v1').value);
+            var v2=Number(document.getElementById('v2').value);
+            console.log("soma = " +(v1+v2));
+        }
+
+        function somaReescreveDocumento(){
+            //função que realiza a soma de dois valores a partir de input do usuário
+            var v1=Number(document.getElementById('v1').value);
+            var v2=Number(document.getElementById('v2').value);
+            document.write("soma = " + (v1+v2));
+        }
+        function atualiza(){
+            //window.alert('funfou de novo');
+            //original = document.getElementById("texto").innerHTML;
+            document.getElementById("texto").innerHTML = "Mudei o meu texto";
+            document.getElementById("texto").style.color="blue";
+        }
+
+        function trocaCor(){
+            document.getElementById("texto").innerHTML=original;
+            document.getElementById("texto").style.color="#000";
+        }
+       
+        //window.alert("Valor = "+(Number(valor1)+valor2));
+        //casting para conversão de variável. Ex.: Number(valor)
+    </script>
+</html>

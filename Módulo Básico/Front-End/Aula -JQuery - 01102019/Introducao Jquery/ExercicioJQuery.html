@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style src="styles.css"></style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="Valor1"> Insira o primeiro número </input>
+    <input type="text" id="Valor2"> Insira o segundo número </input>
+    <button>Soma</button>
+    <div id="resultado"></div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $("button").click(function () {
+            var valor1 = Number($("#Valor1").val());
+            var valor2 = Number($("#Valor2").val());
+
+            $("#resultado").html("<p> Resultado = "+(valor1+valor2)+"</p>");
+        });
+});
+
+</script>
+
+</html>

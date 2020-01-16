@@ -1,0 +1,7 @@
+Exercício 3
+
+Médicos(*CRM(PK), salário, nome, especialidade)
+Pacientes(Nome, *CPF(PK), Telefone1, Endereço, Telefone2, Telefone3, numQuarto (FK), CRM(FK), horarioVisita)
+Quartos(*Numero(PK), andar)
+<!--Visita(CRM, CPF, horarioVisita) substituída por entidade única tratamento-->
+Tratamento(CRM(FK), CPF(FK), Descrição, *cod_Tratamento (PK), horaVisita)

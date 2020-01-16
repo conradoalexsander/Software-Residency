@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>O Matemático</title>
+    <link rel="stylesheet" href="css\stylesheet.css">
+</head>
+
+<body>
+    <div class="Header">
+        <h1>O Matemático</h1>
+    </div>
+
+    <div id="INPUTS">
+            <label id="labelNumDec" for="numDec">Nº de casas decimais: </label>
+            <input type="number" id="numDec" placeholder=" .XX">
+    </div>
+
+    <div id="INPUTS">
+        
+        <label id="labelN1" for="n1">N1: </label>
+        <input type="number" id="n1" placeholder=" Insira o primeiro valor: ">
+    </div>
+
+    <div id="INPUTS">
+        <label id="labelN2" for="n1">N2: </label>
+        <input type="number" id="n2" placeholder=" Insira o segundo valor: ">
+    </div>
+
+
+    <div id="OPERADORES">
+        <button class="button" onclick="soma()">+</button>
+        <button class="button" onclick="multiplicacao()">*</button>
+        <button class="button" onclick="exponencial()">X<sup>y</sup></button>
+        <button class="button" onclick="logx()">Log x</button>
+    </div>
+
+    <div id="OPERADORES">
+        <button class="button2" onclick="subtracao()">-</button>
+        <button class="button2" onclick="divisao()">/</button>
+        <button class="button2" onclick="raizQuadrada()">√</button>
+        <button class="button2" onclick="fatorial()">N!</button>
+        <button class="button3" onclick="limpar()">LIMPAR</button>
+    </div>
+
+    <div id="RESULTADO">
+
+    </div>
+
+    <div class="footer">
+        <h4>Aplicativo desenvolvido por Conrado Alexsander</h4>
+        <h6>*Para a função exponencial X será N1 e Y N2</h6>
+        <h6>*Para as funções raiz quadrada, fatorial e log x: o valor considerado será N1</h6>
+    </div>
+
+</body>
+<script src="javascript\calculadoraJS.js"></script>
+
+</html>
